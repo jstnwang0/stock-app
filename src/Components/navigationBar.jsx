@@ -2,28 +2,39 @@ import React, { Component } from "react";
 import { Icon, Menu } from "semantic-ui-react";
 
 class NaviBar extends Component {
-  state = {}
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
-
   render() {
-    const { activeItem } = this.state
-
     return (
       <div>
         <Menu fluid widths={5}>
-          <Menu.Item name="home" active={activeItem === 'home'} onClick={this.handleItemClick}>
+          <Menu.Item
+            name="home"
+            active={this.props.activeItem === "home"}
+            onClick={this.props.onItemClick}
+          >
             <Icon name="home" size="large" />
           </Menu.Item>
-          <Menu.Item name="notification" active={activeItem === 'notification'} onClick={this.handleItemClick}>
+          <Menu.Item
+            name="notification"
+            active={this.props.activeItem === "notification"}
+            onClick={this.props.onItemClick}
+          >
             <Icon name="bell outline" size="large" />
           </Menu.Item>
-          <Menu.Item name="createPost" active={activeItem === 'createPost'} onClick={this.handleItemClick}>
+          <Menu.Item
+            name="createPost"
+            active={this.props.activeItem === "createPost"}
+            onClick={this.props.onItemClick}
+          >
             <Icon name="plus square outline" size="large" />
           </Menu.Item>
-          <Menu.Item name="chat" active={activeItem === 'chat'} onClick={this.handleItemClick}>
+          <Menu.Item
+            name="chat"
+            active={this.props.activeItem === "chat"}
+            onClick={this.props.onItemClick}
+          >
             <Icon name="rocketchat" size="large" />
           </Menu.Item>
-          <Menu.Item name="profile" active={activeItem === 'profile'} onClick={this.handleItemClick}>
+          <Menu.Item name="profile" onClick={this.props.onShowSidebar}>
             <Icon name="user outline" size="large" />
           </Menu.Item>
         </Menu>
