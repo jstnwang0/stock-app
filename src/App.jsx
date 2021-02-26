@@ -3,7 +3,7 @@ import "./App.css";
 import "./Components/navigationBar";
 import NaviBar from "./Components/navigationBar";
 import React, { Component } from "react";
-import Sidebar from "./sidebar";
+import Sidebar from "./Components/sidebar";
 
 class App extends Component {
   state = {
