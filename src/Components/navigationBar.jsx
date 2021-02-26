@@ -3,36 +3,37 @@ import { Icon, Menu } from "semantic-ui-react";
 
 class NaviBar extends Component {
   render() {
+    const { activeItem, onItemClick } = this.props;
     return (
       <div>
         <Menu fluid widths={5}>
           <Menu.Item
             name="home"
-            active={this.props.activeItem === "home"}
-            onClick={this.props.onItemClick}
+            active={activeItem === "home"}
+            onClick={onItemClick}
           >
             <Icon name="home" size="large" />
           </Menu.Item>
           <Menu.Item
             name="notification"
-            active={this.props.activeItem === "notification"}
-            onClick={this.props.onItemClick}
+            active={activeItem === "notification"}
+            onClick={onItemClick}
           >
             <Icon name="bell outline" size="large" />
           </Menu.Item>
           <Menu.Item
             name="createPost"
-            active={this.props.activeItem === "createPost"}
-            onClick={this.props.onItemClick}
+            active={activeItem === "createPost"}
+            onClick={onItemClick}
           >
             <Icon name="plus square outline" size="large" />
           </Menu.Item>
           <Menu.Item
             name="chat"
-            active={this.props.activeItem === "chat"}
-            onClick={this.props.onItemClick}
+            active={activeItem === "chat"}
+            onClick={onItemClick}
           >
-            <Icon name="rocketchat" size="large" />
+            <Icon name="comment alternate outline" size="large" />
           </Menu.Item>
           <Menu.Item name="profile" onClick={this.props.onShowSidebar}>
             <Icon name="user outline" size="large" />
