@@ -1,20 +1,17 @@
 import React, { Component } from "react";
-import { Typography } from "@material-ui/core";
+import { Typography, Grid } from "@material-ui/core";
+import { RiUser3Line } from "react-icons/ri";
+import { IoBookmarkOutline } from "react-icons/io5";
+import { BsListUl } from "react-icons/bs";
+import { FiCreditCard } from "react-icons/fi";
+import { AiOutlineBank } from "react-icons/ai";
 
 import "fontsource-roboto";
 
-import {
-  Button,
-  Container,
-  Icon,
-  Menu,
-  Sidebar,
-  Header,
-  Divider,
-} from "semantic-ui-react";
+import { Menu, Sidebar, Divider } from "semantic-ui-react";
 
 class Sidenav extends Component {
-  state = { activeItem: "account" };
+  state = { activeItem: "profile" };
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name });
   render() {
@@ -30,29 +27,64 @@ class Sidenav extends Component {
             vertical
             visible={this.props.visible}
             direction="right"
-            width="wide"
           >
-            <Menu text vertical borderless size="large">
+            <Menu text vertical borderless size="huge">
               <Menu.Item
-                name="account"
+                name="profile"
                 onClick={this.handleItemClick}
-                active={activeItem === "account"}
+                active={activeItem === "profile"}
               >
-                <Typography variant="h6" children="Profile"></Typography>
+                <Grid
+                  container
+                  direction="row"
+                  justify="flex-start"
+                  alignItems="center"
+                >
+                  <Grid item xs={3}>
+                    <RiUser3Line size={25} />
+                  </Grid>
+                  <Grid item>
+                    <Typography variant="h6" children="Profile"></Typography>
+                  </Grid>
+                </Grid>
               </Menu.Item>
               <Menu.Item
                 name="bookmarks"
                 onClick={this.handleItemClick}
                 active={activeItem === "bookmarks"}
               >
-                <Typography variant="h6" children="Bookmarks"></Typography>
+                <Grid
+                  container
+                  direction="row"
+                  justify="flex-start"
+                  alignItems="center"
+                >
+                  <Grid item xs={3}>
+                    <IoBookmarkOutline size={25} />
+                  </Grid>
+                  <Grid item>
+                    <Typography variant="h6" children="Bookmarks"></Typography>
+                  </Grid>
+                </Grid>
               </Menu.Item>
               <Menu.Item
                 name="Lists"
                 onClick={this.handleItemClick}
                 active={activeItem === "Lists"}
               >
-                <Typography variant="h6" children="Lists"></Typography>
+                <Grid
+                  container
+                  direction="row"
+                  justify="flex-start"
+                  alignItems="center"
+                >
+                  <Grid item xs={3}>
+                    <BsListUl size={25} />
+                  </Grid>
+                  <Grid item>
+                    <Typography variant="h6" children="Lists"></Typography>
+                  </Grid>
+                </Grid>
               </Menu.Item>
 
               <Divider clearing />
@@ -62,20 +94,44 @@ class Sidenav extends Component {
                 onClick={this.handleItemClick}
                 active={activeItem === "Your Cards"}
               >
-                <Typography
-                  variant="h6"
-                  children="Your Cards (to subscribe)"
-                ></Typography>
+                <Grid
+                  container
+                  direction="row"
+                  justify="flex-start"
+                  alignItems="center"
+                >
+                  <Grid item xs={3}>
+                    <FiCreditCard size={25} />
+                  </Grid>
+                  <Grid item>
+                    <Typography
+                      variant="h6"
+                      children="Your Cards (to subscribe)"
+                    ></Typography>
+                  </Grid>
+                </Grid>
               </Menu.Item>
               <Menu.Item
                 name="Add Bank"
                 onClick={this.handleItemClick}
                 active={activeItem === "Add Bank"}
               >
-                <Typography
-                  variant="h6"
-                  children="Add bank (to earn)"
-                ></Typography>
+                <Grid
+                  container
+                  direction="row"
+                  justify="flex-start"
+                  alignItems="center"
+                >
+                  <Grid item xs={3}>
+                    <AiOutlineBank size={30} />
+                  </Grid>
+                  <Grid item>
+                    <Typography
+                      variant="h6"
+                      children="Add bank (to earn)"
+                    ></Typography>
+                  </Grid>
+                </Grid>
               </Menu.Item>
 
               <Divider clearing />

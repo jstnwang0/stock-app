@@ -1,5 +1,9 @@
 import React, { Component } from "react";
-import { Icon, Menu } from "semantic-ui-react";
+import { Menu } from "semantic-ui-react";
+import { AiOutlineHome, AiOutlineBell } from "react-icons/ai";
+import { BiMessageAltAdd } from "react-icons/bi";
+import { FaRegCommentAlt } from "react-icons/fa";
+import { RiUser3Line } from "react-icons/ri";
 
 class NaviBar extends Component {
   render() {
@@ -10,37 +14,37 @@ class NaviBar extends Component {
           <Menu.Item
             name="home"
             active={activeItem === "home"}
-            color={activeItem === "home" ? "blue" : null}
+            color={activeItem === "home" ? "green" : null}
             onClick={onItemClick}
           >
-            <Icon name="home" size="large" />
+            <AiOutlineHome size={25} />
           </Menu.Item>
           <Menu.Item
             name="notification"
             active={activeItem === "notification"}
-            color={activeItem === "notification" ? "blue" : null}
+            color={activeItem === "notification" ? "green" : null}
             onClick={onItemClick}
           >
-            <Icon name="bell outline" size="large" />
+            <AiOutlineBell size={25} />
           </Menu.Item>
           <Menu.Item
             name="createPost"
             active={activeItem === "createPost"}
-            color={activeItem === "createPost" ? "blue" : null}
+            color={activeItem === "createPost" ? "green" : null}
             onClick={onItemClick}
           >
-            <Icon name="plus square outline" size="large" />
+            <BiMessageAltAdd size={25} />
           </Menu.Item>
           <Menu.Item
             name="chat"
             active={activeItem === "chat"}
-            color={activeItem === "chat" ? "blue" : null}
+            color={activeItem === "chat" ? "green" : null}
             onClick={onItemClick}
           >
-            <Icon name="comment alternate outline" size="large" />
+            <FaRegCommentAlt size={25} />
           </Menu.Item>
           <Menu.Item name="profile" onClick={this.props.onShowSidebar}>
-            <Icon name="user outline" size="large" />
+            <RiUser3Line size={25} />
           </Menu.Item>
         </Menu>
       </div>
