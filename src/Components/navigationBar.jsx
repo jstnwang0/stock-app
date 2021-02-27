@@ -6,10 +6,11 @@ class NaviBar extends Component {
     const { activeItem, onItemClick } = this.props;
     return (
       <div>
-        <Menu fluid widths={5}>
+        <Menu borderless fluid widths={5}>
           <Menu.Item
             name="home"
             active={activeItem === "home"}
+            color={activeItem === "home" ? "blue" : null}
             onClick={onItemClick}
           >
             <Icon name="home" size="large" />
@@ -17,6 +18,7 @@ class NaviBar extends Component {
           <Menu.Item
             name="notification"
             active={activeItem === "notification"}
+            color={activeItem === "notification" ? "blue" : null}
             onClick={onItemClick}
           >
             <Icon name="bell outline" size="large" />
@@ -24,6 +26,7 @@ class NaviBar extends Component {
           <Menu.Item
             name="createPost"
             active={activeItem === "createPost"}
+            color={activeItem === "createPost" ? "blue" : null}
             onClick={onItemClick}
           >
             <Icon name="plus square outline" size="large" />
@@ -31,6 +34,7 @@ class NaviBar extends Component {
           <Menu.Item
             name="chat"
             active={activeItem === "chat"}
+            color={activeItem === "chat" ? "blue" : null}
             onClick={onItemClick}
           >
             <Icon name="comment alternate outline" size="large" />
