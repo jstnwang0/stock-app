@@ -2,34 +2,35 @@ import logo from "./logo.svg";
 import "./App.css";
 import "./Components/navigationBar";
 import NaviBar from "./Components/navigationBar";
-import React, { Component } from "react";
+import React, { useEffect, useState } from "react";
 import Sidebar from "./Components/sidebar";
 
-class App extends Component {
-  state = {
-    activeItem: "home",
-    sidebarVisible: false,
-  };
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name });
-  handleSidebarVisible = (visibility) => {
-    this.setState({ sidebarVisible: visibility });
-  };
+const App = () => {
+  const [activeItem, setActiveItem] = React.useState("home");
+  const [sidebarVisible, setSidebarVisible] = React.useState(false);
 
-  render() {
-    return (
-      <div>
-        <NaviBar
+  function handleItemClick(e, { name }) {
+    setActiveItem(name);
+  }
+
+  return (
+    <div>
+      <NaviBar
+        onItemClick={handleItemClick}
+        onShowSidebar={() => setSidebarVisible(true)}
+        activeItem={activeItem}
+      />
+      <Sidebar
+        onHideSidebar={() => setSidebarVisible(false)}
+        visible={sidebarVisible}
+      />
+      {/* <NaviBar
           onItemClick={this.handleItemClick}
           onShowSidebar={() => this.handleSidebarVisible(true)}
           activeItem={this.state.activeItem}
-        />
-        <Sidebar
-          onHideSidebar={() => this.handleSidebarVisible(false)}
-          visible={this.state.sidebarVisible}
-        />
-      </div>
-    );
-  }
-}
+        /> */}
+    </div>
+  );
+};
 
 export default App;

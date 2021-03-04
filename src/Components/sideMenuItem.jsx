@@ -18,7 +18,7 @@ const SideMenuObj = (props) => {
           <Grid item xs={2}>
             {props.icon}
           </Grid>
-          <Grid item m>
+          <Grid item>
             <Typography variant="h6" children={props.name}></Typography>
           </Grid>
         </Grid>
