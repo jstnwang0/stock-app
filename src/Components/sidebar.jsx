@@ -49,7 +49,7 @@ const Sidenav = ({ onHideSidebar, visible }) => {
             icon={<FiCreditCard size={25} />}
           ></SideMenuObj>
           <SideMenuObj
-            name="Add Bank"
+            name="Add Bank (to earn)"
             icon={<AiOutlineBank size={30} />}
           ></SideMenuObj>
 

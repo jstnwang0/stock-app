@@ -4,6 +4,7 @@ import { AiOutlineHome, AiOutlineBell } from "react-icons/ai";
 import { BiMessageAltAdd } from "react-icons/bi";
 import { FaRegCommentAlt } from "react-icons/fa";
 import { RiUser3Line } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const NaviBar = ({ activeItem, onItemClick, onShowSidebar }) => {
   return (
@@ -16,14 +17,18 @@ const NaviBar = ({ activeItem, onItemClick, onShowSidebar }) => {
           active={activeItem === "home"}
           color={activeItem === "home" ? "green" : null}
           onClick={onItemClick}
+          as={Link}
+          to="/"
         >
           <AiOutlineHome size={25} />
         </Menu.Item>
         <Menu.Item
-          name="notification"
-          active={activeItem === "notification"}
-          color={activeItem === "notification" ? "green" : null}
+          name="notifications"
+          active={activeItem === "notifications"}
+          color={activeItem === "notifications" ? "green" : null}
           onClick={onItemClick}
+          as={Link}
+          to="/notifications"
         >
           <AiOutlineBell size={25} />
         </Menu.Item>
@@ -32,6 +37,8 @@ const NaviBar = ({ activeItem, onItemClick, onShowSidebar }) => {
           active={activeItem === "createPost"}
           color={activeItem === "createPost" ? "green" : null}
           onClick={onItemClick}
+          as={Link}
+          to="/createPost"
         >
           <BiMessageAltAdd size={25} />
         </Menu.Item>
@@ -40,6 +47,8 @@ const NaviBar = ({ activeItem, onItemClick, onShowSidebar }) => {
           active={activeItem === "chat"}
           color={activeItem === "chat" ? "green" : null}
           onClick={onItemClick}
+          as={Link}
+          to="/chat"
         >
           <FaRegCommentAlt size={25} />
         </Menu.Item>
