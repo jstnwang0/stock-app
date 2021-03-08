@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Menu } from "semantic-ui-react";
 import { AiOutlineHome, AiOutlineBell } from "react-icons/ai";
 import { BiMessageAltAdd } from "react-icons/bi";
