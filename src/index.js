@@ -5,3 +5,4 @@ import App from "./App";
 import "semantic-ui-css/semantic.min.css";
 
 ReactDOM.render(<App />, document.getElementById("root"));
+document.body.style = "background: #3b3d3f; color: white;";

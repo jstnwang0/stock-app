@@ -1,6 +1,6 @@
 .side-drawer {
   height: 100%;
-  background: white;
+  background: #1b1c1d;
   box-shadow: none;
   position: fixed;
   top: 0;
@@ -20,10 +20,12 @@
 }
 
 .side-drawer-menu-item {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
+
 .side-drawer-menu-content {
+  color: white;
   display: flex;
   align-items: center;
 }

@@ -16,6 +16,7 @@ const NaviBar = ({ activeItem, onItemClick, onSidebarClick }) => {
         borderless
         fixed="top"
         fluid
+        inverted
         widths={5}
       >
         <Menu.Item

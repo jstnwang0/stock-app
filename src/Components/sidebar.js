@@ -29,9 +29,12 @@ const Sidenav = ({ hideSidebar, visible }) => {
       ></div>
       <nav className={drawerClasses}>
         <div className="side-drawer-content">
-          <Menu secondary vertical size="huge" style={{ margin: 0 }}>
+          <Menu inverted vertical size="huge" style={{ margin: 0 }}>
             <div className="side-drawer-menu-item">
-              <Menu.Item onClick={() => {}} style={{ paddingLeft: "10px" }}>
+              <Menu.Item
+                onClick={() => {}}
+                style={{ paddingLeft: "10px", borderRadius: "10px" }}
+              >
                 <div className="side-drawer-menu-content">
                   <RiUser3Line size={25} />
                   <p>Profile</p>
@@ -40,7 +43,10 @@ const Sidenav = ({ hideSidebar, visible }) => {
             </div>
 
             <div className="side-drawer-menu-item">
-              <Menu.Item onClick={() => {}} style={{ paddingLeft: "10px" }}>
+              <Menu.Item
+                onClick={() => {}}
+                style={{ paddingLeft: "10px", borderRadius: "10px" }}
+              >
                 <div className="side-drawer-menu-content">
                   <IoBookmarkOutline size={25} />
                   <p>Bookmarks</p>
@@ -48,7 +54,10 @@ const Sidenav = ({ hideSidebar, visible }) => {
               </Menu.Item>
             </div>
             <div className="side-drawer-menu-item">
-              <Menu.Item onClick={() => {}} style={{ paddingLeft: "10px" }}>
+              <Menu.Item
+                onClick={() => {}}
+                style={{ paddingLeft: "10px", borderRadius: "10px" }}
+              >
                 <div className="side-drawer-menu-content">
                   <IoSettingsOutline size={25} />
                   <p>Settings</p>
@@ -57,7 +66,10 @@ const Sidenav = ({ hideSidebar, visible }) => {
             </div>
             <Divider clearing />
             <div className="side-drawer-menu-item">
-              <Menu.Item onClick={() => {}} style={{ paddingLeft: "10px" }}>
+              <Menu.Item
+                onClick={() => {}}
+                style={{ paddingLeft: "10px", borderRadius: "10px" }}
+              >
                 <div className="side-drawer-menu-content">
                   <FiCreditCard size={25} />
                   <p>Your Cards</p>
@@ -65,7 +77,10 @@ const Sidenav = ({ hideSidebar, visible }) => {
               </Menu.Item>
             </div>
             <div className="side-drawer-menu-item">
-              <Menu.Item onClick={() => {}} style={{ paddingLeft: "10px" }}>
+              <Menu.Item
+                onClick={() => {}}
+                style={{ paddingLeft: "10px", borderRadius: "10px" }}
+              >
                 <div className="side-drawer-menu-content">
                   <RiBankLine size={25} />
                   <p>Add Bank</p>
@@ -74,7 +89,10 @@ const Sidenav = ({ hideSidebar, visible }) => {
             </div>
             <Divider clearing />
             <div className="side-drawer-menu-item">
-              <Menu.Item onClick={() => {}} style={{ paddingLeft: "10px" }}>
+              <Menu.Item
+                onClick={() => {}}
+                style={{ paddingLeft: "10px", borderRadius: "10px" }}
+              >
                 <div className="side-drawer-menu-content">
                   <IoMdHelp size={25} />
                   <p>Help and Support</p>
@@ -82,7 +100,10 @@ const Sidenav = ({ hideSidebar, visible }) => {
               </Menu.Item>
             </div>
             <div className="side-drawer-menu-item">
-              <Menu.Item onClick={() => {}} style={{ paddingLeft: "10px" }}>
+              <Menu.Item
+                onClick={() => {}}
+                style={{ paddingLeft: "10px", borderRadius: "10px" }}
+              >
                 <div className="side-drawer-menu-content">
                   <FiLogOut size={25} />
                   <p>Log Out</p>
