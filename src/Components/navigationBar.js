@@ -6,12 +6,18 @@ import { FaRegCommentAlt } from "react-icons/fa";
 import { RiUser3Line } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
-const NaviBar = ({ activeItem, onItemClick, onShowSidebar }) => {
+const NaviBar = ({ activeItem, onItemClick, onSidebarClick }) => {
   return (
     <div
     //  className="footer"
     >
-      <Menu borderless fluid widths={5}>
+      <Menu
+        style={{ boxShadow: "none" }}
+        borderless
+        fixed="top"
+        fluid
+        widths={5}
+      >
         <Menu.Item
           name="home"
           active={activeItem === "home"}
@@ -52,7 +58,7 @@ const NaviBar = ({ activeItem, onItemClick, onShowSidebar }) => {
         >
           <FaRegCommentAlt size={25} />
         </Menu.Item>
-        <Menu.Item name="profile" onClick={onShowSidebar}>
+        <Menu.Item name="profile" onClick={onSidebarClick}>
           <RiUser3Line size={25} />
         </Menu.Item>
       </Menu>
