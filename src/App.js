@@ -1,6 +1,6 @@
 import "./App.css";
-import "./Components/navigationBar";
-import NaviBar from "./Components/navigationBar";
+import "./NavigationBar/navigationBar";
+import NaviBar from "./NavigationBar/navigationBar";
 import React, { useState } from "react";
 import Sidebar from "./Components/sidebar";
 import HomePage from "./Pages/homePage";
