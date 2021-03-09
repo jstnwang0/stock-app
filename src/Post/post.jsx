@@ -1,5 +1,5 @@
 import React from "react";
-import "../styling/Post.css";
+import "./Post.css";
 import { GoVerified } from "react-icons/go";
 import { FaRegHeart } from "react-icons/fa";
 import { HiOutlineBookmark } from "react-icons/hi";
