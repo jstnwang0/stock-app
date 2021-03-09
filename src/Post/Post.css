@@ -36,18 +36,18 @@
 .post-header {
   display: flex;
   margin-top: 5px;
-  height: 100%;
+  height: 35px;
   padding-left: 20px;
   padding-top: 20px;
   width: 100%;
+  /* padding-bottom: -25px; */
 }
 
 .post-tickerbox {
   display: flex;
   flex-direction: row;
   height: 60px;
-  padding-top: 0px;
-  background-color: blueviolet;
+  margin-top: 15px;
 }
 
 .post-tickername {
@@ -71,10 +71,9 @@
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 545;
   margin-right: 20px;
-  height: 50px;
+  height: 35px;
   margin-bottom: 0;
   padding-bottom: 0;
-  background-color: blue;
 }
 
 .time-posted {
@@ -83,7 +82,7 @@
   color: grey;
   font-family: Arial, Helvetica, sans-serif;
   padding-left: 20px;
-  height: 50px;
+  height: 35px;
   font-size: medium;
 }
 
