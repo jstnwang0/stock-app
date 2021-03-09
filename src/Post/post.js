@@ -13,32 +13,14 @@ function Post() {
     <ul>
       {postList.map((s) => {
         return (
-          <div className="post">
-            <div className="post-avatar">
+          <div className="box">
+            <div className="avatar-body">
               <Avatar src={s.avatar} />
             </div>
             <div className="post-body">
-              <div className="post-header">
-                <div className="post-headerText">
-                  <h3>{s.username} </h3>
-                </div>
-                <div className="post-headerDescription">
-                  <p>{s.text}</p>
-                </div>
-              </div>
-              <img src={s.image} alt="" />
-              <div className="post-footer">
-                <p>
-                  <div className="numLikes">{s.likes}</div>
-                  <FaRegHeart size={23} />
-                </p>
-                <p>
-                  <div className="numLikes">{s.comments}</div>
-                  <BiCommentDetail size={23} />
-                </p>
-                <IoShareOutline size={25} />
-                <HiOutlineBookmark size={24} />
-              </div>
+              <div classname="post-header">daf</div>
+              <div classname="post-header" />
+              <div classname="post-header" />
             </div>
           </div>
         );
