@@ -14,13 +14,13 @@ function Post() {
       {postList.map((s) => {
         return (
           <div className="box">
-            <div className="avatar-body">
+            <div className="avatar">
               <Avatar src={s.avatar} />
             </div>
             <div className="post-body">
-              <div classname="post-header">daf</div>
-              <div classname="post-header" />
-              <div classname="post-header" />
+              <div className="post-header">daf</div>
+              <div className="post-header">daf</div>
+              <div className="post-header">daf</div>
             </div>
           </div>
         );
