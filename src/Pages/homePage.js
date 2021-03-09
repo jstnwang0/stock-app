@@ -1,10 +1,9 @@
-import React, { Component } from "react";
-import Post from "../Components/post";
+import React from "react";
+import Post from "../Post/post";
 
 function HomePage() {
   return (
     <div>
-      <Post />
       <Post />
     </div>
   );

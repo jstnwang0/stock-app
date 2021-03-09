@@ -6,41 +6,51 @@
   margin-left: 30%;
 }
 
-.post__body {
+.post-body {
   padding: 10px;
 }
 
-.post__body > img {
+.post-body > img {
   border-radius: 20px;
 }
 
-.post__footer {
+.post-footer {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
 
-.post__headerDescription {
+.numLikes {
+  margin-right: 6px;
+  font-weight: 1000;
+  font-size: 1.25rem;
+}
+
+.post-footer p {
+  display: flex;
+}
+
+.post-headerDescription {
   margin-bottom: 10px;
   font-size: 15px;
 }
 
-.post__headerText > h3 {
+.post-headerText > h3 {
   font-size: 15px;
   margin-bottom: 5px;
 }
 
-.post__badge {
+.post-badge {
   font-size: 14px !important;
   color: var(--twitter-color);
 }
 
-.post__headerSpecial {
+.post-headerSpecial {
   font-weight: 600;
   font-size: 12px;
   color: gray;
 }
 
-.post__avatar {
+.post-avatar {
   padding: 20px;
 }
