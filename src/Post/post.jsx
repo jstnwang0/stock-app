@@ -10,12 +10,12 @@ import { Avatar } from "@material-ui/core";
 function Post({ displayName, username, verified, text, image, avatar }) {
   return (
     <div className="post">
-      <div className="post__avatar">
+      <div className="post-avatar">
         <Avatar src="https://picsum.photos/200" />
       </div>
-      <div className="post__body">
-        <div className="post__header">
-          <div className="post__headerText">
+      <div className="post-body">
+        <div className="post-header">
+          <div className="post-headerText">
             <h3>
               Jerry Hamada{" "}
               <span>
@@ -23,7 +23,7 @@ function Post({ displayName, username, verified, text, image, avatar }) {
               </span>
             </h3>
           </div>
-          <div className="post__headerDescription">
+          <div className="post-headerDescription">
             <p>buy gme, sell your house, and get tendies</p>
           </div>
         </div>
@@ -31,11 +31,17 @@ function Post({ displayName, username, verified, text, image, avatar }) {
           src="https://media0.giphy.com/media/xBXWbB1p0WfQraQP6k/giphy.gif"
           alt=""
         />
-        <div className="post__footer">
-          <FaRegHeart size={20} />
-          <BiCommentDetail size={20} />
-          <IoShareOutline size={20} />
-          <HiOutlineBookmark size={20} />
+        <div className="post-footer">
+          <p>
+            <div className="numLikes">56</div>
+            <FaRegHeart size={23} />
+          </p>
+          <p>
+            <div className="numLikes">45</div>
+            <BiCommentDetail size={23} />
+          </p>
+          <IoShareOutline size={25} />
+          <HiOutlineBookmark size={24} />
         </div>
       </div>
     </div>
