@@ -1,11 +1,23 @@
-.box {
+.box-green {
   display: flex;
-  background-color: black;
   width: 35vw;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-  height: 300px;
+  min-height: 200px;
+  background: rgba(134, 255, 123, 0.15);
+  border-radius: 20px;
+}
+
+.box-red {
+  display: flex;
+  width: 35vw;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 200px;
+  background: rgba(255, 4, 4, 0.15);
+  border-radius: 20px;
 }
 
 .avatar {
@@ -13,64 +25,70 @@
   width: 10%;
   justify-content: center;
   padding: 15px;
-  background-color: cyan;
 }
 
-.post-body {
+.post-box {
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* height: 100%; */
-  background-color: darkgoldenrod;
 }
 
 .post-header {
+  display: flex;
+  margin-top: 5px;
   height: 100%;
-  padding: 15px;
-  background-color: gray;
+  padding-left: 20px;
+  padding-top: 20px;
+  width: 100%;
 }
 
-.post-body > img {
-  border-radius: 20px;
+.post-tickerbox {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  padding-top: 0px;
+  background-color: blueviolet;
+}
+
+.post-tickername {
+  display: flex;
+  /* margin-top: -20px; */
+  height: 100%;
+  padding-left: 50px;
+  width: 30%;
+  align-items: center;
+}
+
+.post-targets p {
+  display: flex;
+  height: 100%;
+  width: 200%;
+  margin-top: -55px;
+}
+
+.styling-header {
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 545;
+  margin-right: 20px;
+  height: 50px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  background-color: blue;
+}
+
+.time-posted {
+  font-size: large;
+  font-weight: 300;
+  color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 20px;
+  height: 50px;
+  font-size: medium;
 }
 
 .post-footer {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-}
-
-.numLikes {
-  margin-right: 6px;
-  font-weight: 1000;
-  font-size: 1.25rem;
-}
-
-.post-footer p {
-  display: flex;
-}
-
-.post-headerDescription {
-  margin-bottom: 10px;
-  font-size: 15px;
-}
-
-.post-headerText > h3 {
-  font-size: 15px;
-  margin-bottom: 5px;
-}
-
-.post-badge {
-  font-size: 14px !important;
-  color: var(--twitter-color);
-}
-
-.post-headerSpecial {
-  font-weight: 600;
-  font-size: 12px;
-  color: gray;
-}
-
-.post-avatar {
-  padding: 20px;
 }

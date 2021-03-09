@@ -12,16 +12,31 @@ function Post() {
   return (
     <ul>
       {postList.map((s) => {
+        let box;
+        if (s.buy) {
+          box = "box-green";
+        } else {
+          box = "box-red";
+        }
         return (
-          <div className="box">
+          <div className={box}>
             <div className="avatar">
               <Avatar src={s.avatar} />
             </div>
-            <div className="post-body">
-              <div className="post-header">daf</div>
-              <div className="post-header">daf</div>
-              <div className="post-header">daf</div>
-              <div className="post-header">daf</div>
+            <div className="post-box">
+              <div className="post-header">
+                <span className="styling-header">@{s.username}</span>
+                <span className="time-posted">posted {s.timePosted}</span>
+              </div>
+              <div className="post-tickerbox">
+                <div className="post-tickername">${s.ticker}</div>
+                <div className="post-targets">
+                  <p>price target: ${s.pricetarget}</p>
+                  <p>buy range: ${s.startposition}</p>
+                  <p>stop loss: ${s.stoploss}</p>
+                </div>
+              </div>
+              <div className="post-reasoning">{s.reasoning}</div>
             </div>
           </div>
         );
