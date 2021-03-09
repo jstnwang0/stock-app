@@ -1,6 +1,7 @@
 .box-green {
   display: flex;
   width: 35vw;
+  min-width: 500px;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -13,6 +14,7 @@
   display: flex;
   width: 35vw;
   margin-bottom: 20px;
+  min-width: 500px;
   margin-left: auto;
   margin-right: auto;
   min-height: 200px;
@@ -43,27 +45,45 @@
   /* padding-bottom: -25px; */
 }
 
-.post-tickerbox {
+.post-tickerbox-green {
   display: flex;
   flex-direction: row;
   height: 60px;
   margin-top: 15px;
+  width: 90%;
+  background-color: rgba(134, 255, 123, 0.05);
+  border-radius: 15px;
+}
+
+.post-tickerbox-red {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  margin-top: 15px;
+  width: 90%;
+  background-color: rgba(255, 4, 4, 0.05);
+  border-radius: 15px;
 }
 
 .post-tickername {
   display: flex;
-  /* margin-top: -20px; */
   height: 100%;
-  padding-left: 50px;
-  width: 30%;
-  align-items: center;
+  width: 33%;
+  padding-top: 20px;
+  justify-content: center;
 }
 
 .post-targets p {
   display: flex;
   height: 100%;
-  width: 200%;
+  width: 200px;
   margin-top: -55px;
+}
+
+.post-confidence {
+  display: flex;
+  align-items: center;
+  font-size: large;
 }
 
 .styling-header {
@@ -90,4 +110,8 @@
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+}
+
+.post-reasoning {
+  width: 90%;
 }

@@ -13,10 +13,13 @@ function Post() {
     <ul>
       {postList.map((s) => {
         let box;
+        let tickerbox;
         if (s.buy) {
           box = "box-green";
+          tickerbox = "post-tickerbox-green";
         } else {
           box = "box-red";
+          tickerbox = "post-tickerbox-red";
         }
         return (
           <div className={box}>
@@ -28,12 +31,15 @@ function Post() {
                 <span className="styling-header">@{s.username}</span>
                 <span className="time-posted">posted {s.timePosted}</span>
               </div>
-              <div className="post-tickerbox">
+              <div className={tickerbox}>
                 <div className="post-tickername">${s.ticker}</div>
                 <div className="post-targets">
                   <p>price target: ${s.pricetarget}</p>
                   <p>buy range: ${s.startposition}</p>
                   <p>stop loss: ${s.stoploss}</p>
+                </div>
+                <div className="post-confidence">
+                  Confidence: {s.confidence}
                 </div>
               </div>
               <div className="post-reasoning">{s.reasoning}</div>
