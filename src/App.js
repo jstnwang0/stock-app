@@ -2,7 +2,7 @@ import "./App.css";
 import "./NavigationBar/navigationBar";
 import NaviBar from "./NavigationBar/navigationBar";
 import React, { useState } from "react";
-import Sidebar from "./Sidebar/sidebar";
+import Sidebar from "./SideBar/sidebar";
 import HomePage from "./Pages/homePage";
 import Notifications from "./Pages/notifications";
 import Chat from "./Pages/chat";
