@@ -1,9 +1,11 @@
 import React, { Component } from "react";
+import Post from "../Components/post";
 
 function HomePage() {
   return (
     <div>
-      <h3>HomePage</h3>
+      <Post />
+      <Post />
     </div>
   );
 }
