@@ -1,24 +1,12 @@
-.box-green {
+.box {
   display: flex;
-  width: 35vw;
-  min-width: 500px;
+  width: 40vw;
   margin-bottom: 20px;
+  min-width: 600px;
   margin-left: auto;
   margin-right: auto;
   min-height: 200px;
-  background: rgba(134, 255, 123, 0.15);
-  border-radius: 20px;
-}
-
-.box-red {
-  display: flex;
-  width: 35vw;
-  margin-bottom: 20px;
-  min-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-  min-height: 200px;
-  background: rgba(255, 4, 4, 0.15);
+  background: rgba(14, 12, 12, 0.15);
   border-radius: 20px;
 }
 
@@ -50,6 +38,7 @@
   flex-direction: row;
   height: 60px;
   margin-top: 15px;
+  margin-bottom: 15px;
   width: 90%;
   background-color: rgba(134, 255, 123, 0.05);
   border-radius: 15px;
@@ -60,6 +49,7 @@
   flex-direction: row;
   height: 60px;
   margin-top: 15px;
+  margin-bottom: 15px;
   width: 90%;
   background-color: rgba(255, 4, 4, 0.05);
   border-radius: 15px;
@@ -113,5 +103,12 @@
 }
 
 .post-reasoning {
+  width: 90%;
+  margin-bottom: 15px;
+}
+
+.post-picture {
+  display: flex;
+  margin-top: 15px;
   width: 90%;
 }

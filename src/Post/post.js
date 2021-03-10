@@ -12,17 +12,14 @@ function Post() {
   return (
     <ul>
       {postList.map((s) => {
-        let box;
         let tickerbox;
         if (s.buy) {
-          box = "box-green";
           tickerbox = "post-tickerbox-green";
         } else {
-          box = "box-red";
           tickerbox = "post-tickerbox-red";
         }
         return (
-          <div className={box}>
+          <div className="box">
             <div className="avatar">
               <Avatar src={s.avatar} />
             </div>
@@ -41,6 +38,9 @@ function Post() {
                 <div className="post-confidence">
                   Confidence: {s.confidence}
                 </div>
+              </div>
+              <div className="post-tickerbox">
+                <img src={s.image}></img>
               </div>
               <div className="post-reasoning">{s.reasoning}</div>
             </div>
