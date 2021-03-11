@@ -39,7 +39,7 @@ function Post() {
                   Confidence: {s.confidence}
                 </div>
               </div>
-              <div className="post-tickerbox">
+              <div className="post-picture">
                 <img src={s.image}></img>
               </div>
               <div className="post-reasoning">{s.reasoning}</div>

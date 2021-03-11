@@ -4,7 +4,7 @@ import NaviBar from "./NavigationBar/navigationBar";
 import React, { useState } from "react";
 import Sidebar from "./Sidebar/sidebar";
 import HomePage from "./Pages/homePage";
-import Notifications from "./Pages/notifications";
+import Notifications from "./notifications/notifications";
 import Chat from "./Pages/chat";
 import CreatePost from "./Pages/createPost";
 

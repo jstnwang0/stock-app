@@ -109,6 +109,6 @@
 
 .post-picture {
   display: flex;
-  margin-top: 15px;
   width: 90%;
+  margin-bottom: 15px;
 }
