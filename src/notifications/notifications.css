@@ -1,0 +1,30 @@
+.main-box {
+  width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  background-color: #f0ffff;
+  padding: 12px;
+  margin-top: 10px;
+  flex-direction: row;
+  border-radius: 5px;
+  background: rgba(14, 12, 12, 0.15);
+  font-size: medium;
+}
+
+.avatar {
+  width: 10%;
+}
+
+.message-box {
+  width: 75%;
+  padding: 10px;
+}
+
+.time-stamp {
+  width: 15%;
+}
+
+.message-box p {
+  font-weight: 150;
+}
