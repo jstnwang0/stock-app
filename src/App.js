@@ -6,7 +6,7 @@ import Sidebar from "./Sidebar/sidebar";
 import HomePage from "./Pages/homePage";
 import Notifications from "./notifications/notifications";
 import Chat from "./Pages/chat";
-import CreatePost from "./Pages/createPost";
+import CreatePost from "./createPost/createPost";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
