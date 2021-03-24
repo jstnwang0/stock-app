@@ -2,41 +2,31 @@ import React from "react";
 import "./createPost.css";
 
 function CreatePost() {
-  const toggles = document.querySelectorAll(".toggle-switch");
-
-  toggles.forEach((toggle) => {
-    toggle.addEventListener("click", (e) => {
-      e.currentTarget.classList.toggle("active");
-    });
-  });
   return (
     <div className="main-box">
       <div className="form-content-right">
         <form className="form">
-          <h2>Create a post!</h2>
-          <div class="toggled">
-            <div class="toggle-switch three" />
+          <h2>Create a stock pick!</h2>
+          <div className="buySell">
+            Buy
+            <label class="custom-radio-btn">
+              <input type="radio" name="sample" />
+              <span class="checkmark"></span>
+            </label>
+            Sell
+            <label class="custom-radio-btn">
+              <input type="radio" name="sample" />
+              <span class="checkmark"></span>
+            </label>
           </div>
           <div className="form-box">
-            <div className="input-buyrange">
-              <label htmlFor="buyRange" className="form-label">
+            <div className="input-ticker">
+              <label htmlFor="input-ticker" className="form-label">
                 Buy Range:{" "}
               </label>
               <input
                 type="text"
                 name="quote"
-                placeholder="Enter the buy range"
-              />
-            </div>
-          </div>
-          <div className="form-box">
-            <div className="input-buyrange">
-              <label htmlFor="buyRange" className="form-label">
-                Buy Range:{" "}
-              </label>
-              <input
-                type="text"
-                name="quote2"
                 placeholder="Enter the buy range"
               />
             </div>
